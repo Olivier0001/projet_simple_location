@@ -10,6 +10,6 @@ namespace SLAppsDataAccess.Repository.IRepository
     public interface IClientRepository : IRepository<Client>
     {
         void Update(Client obj);
-        void Save();
+        //void Save();
     }
 }
