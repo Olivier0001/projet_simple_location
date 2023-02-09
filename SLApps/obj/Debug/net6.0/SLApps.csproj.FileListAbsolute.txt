@@ -379,3 +379,7 @@ C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_l
 C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLApps\obj\Debug\net6.0\SLApps.pdb
 C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLApps\obj\Debug\net6.0\SLApps.genruntimeconfig.cache
 C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLApps\obj\Debug\net6.0\ref\SLApps.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLApps\bin\Debug\net6.0\SLAppsDataAccess.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLApps\bin\Debug\net6.0\SLAppsModels.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLApps\bin\Debug\net6.0\SLAppsDataAccess.pdb
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLApps\bin\Debug\net6.0\SLAppsModels.pdb

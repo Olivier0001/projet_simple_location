@@ -1028,6 +1028,32 @@
             "rid": "win"
           }
         }
+      },
+      "SLAppsDataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.13",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13",
+          "SLAppsModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SLAppsDataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SLAppsDataAccess.dll": {}
+        }
+      },
+      "SLAppsModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SLAppsModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SLAppsModels.dll": {}
+        }
       }
     }
   },
@@ -2667,13 +2693,24 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SLAppsDataAccess/1.0.0": {
+      "type": "project",
+      "path": "../SLAppsDataAccess/SLAppsDataAccess.csproj",
+      "msbuildProject": "../SLAppsDataAccess/SLAppsDataAccess.csproj"
+    },
+    "SLAppsModels/1.0.0": {
+      "type": "project",
+      "path": "../SLAppsModels/SLAppsModels.csproj",
+      "msbuildProject": "../SLAppsModels/SLAppsModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.13",
       "Microsoft.EntityFrameworkCore >= 6.0.13",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.13"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.13",
+      "SLAppsDataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2703,7 +2740,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLAppsDataAccess\\SLAppsDataAccess.csproj": {
+              "projectPath": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLAppsDataAccess\\SLAppsDataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

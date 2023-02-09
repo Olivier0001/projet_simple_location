@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using SLApps.Data;
-using SLApps.Model;
+using SLApps.DataAccess;
+using SLAppsModels;
 
 namespace SLApps.Pages.Clients
 {

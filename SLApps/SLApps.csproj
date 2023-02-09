@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.13" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SLAppsDataAccess\SLAppsDataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

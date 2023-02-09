@@ -1,0 +1,17 @@
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\bin\Debug\net6.0\SLAppsDataAccess.deps.json
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\bin\Debug\net6.0\SLAppsDataAccess.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\bin\Debug\net6.0\SLAppsDataAccess.pdb
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\bin\Debug\net6.0\SLAppsModels.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\bin\Debug\net6.0\SLAppsModels.pdb
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.csproj.AssemblyReference.cache
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.AssemblyInfoInputs.cache
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.AssemblyInfo.cs
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.csproj.CopyComplete
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\refint\SLAppsDataAccess.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.pdb
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\ref\SLAppsDataAccess.dll
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\bin\Debug\net6.0\SLAppsDataAccess.runtimeconfig.json
+C:\Users\olivier.malamou\source\repos\projet_simple_location\git\projet_simple_location\SLAppsDataAccess\obj\Debug\net6.0\SLAppsDataAccess.genruntimeconfig.cache
