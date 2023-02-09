@@ -1,0 +1,63 @@
+﻿@page
+@model SLApps.Pages.Clients.IndexModel
+
+<partial name="_Notification" />
+
+<br>
+<h2 class="text-primary">Liste de Clients</h2>
+<br>
+<div class="col-6">
+    <a asp-page="create" class="btn btn-primary">
+        <i class="bi bi-plus-square"></i> &nbsp;Créer Nouveau Client
+    </a>
+</div>
+
+<br>
+<br>
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>ID Client</th>
+            <th>ID Role</th>
+            <th>Nom Client</th>
+            <th>Prenom Client</th>
+            <th>Age Client</th>
+            <th>Numero Telephone Client</th>
+            <th>Email Client</th>
+            <th>Adresse Client</th>
+            <th>Code Postal Client</th>
+            <th>Ville Client</th>
+            <th>Date Creation Client</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.Clients)
+        {
+            <tr>
+                <td>@obj.id_client</td>
+                <td>@obj.id_role</td>
+                <td>@obj.nom_client</td>
+                <td>@obj.prenom_client</td>
+                <td>@obj.age_client</td>
+                <td>@obj.numero_telephone_client</td>
+                <td>@obj.email_client</td>
+                <td>@obj.adresse_client</td>
+                <td>@obj.code_postal_client</td>
+                <td>@obj.ville_client</td>
+                <td>@obj.date_creation_client</td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-page="Edit" asp-route-id_client="@obj.id_client" class="btn btn-primary mx-2">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <a asp-page="Delete" asp-route-id_client="@obj.id_client" class="btn btn-danger mx-2">
+                            <i class="bi bi-trash-fill"></i>
+                        </a>
+                    </div>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
