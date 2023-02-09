@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\SLApps\\SLApps.csproj": {}
+    "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\SLApps.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\SLApps\\SLApps.csproj": {
+    "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\SLApps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\SLApps\\SLApps.csproj",
+        "projectUniqueName": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\SLApps.csproj",
         "projectName": "SLApps",
-        "projectPath": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\SLApps\\SLApps.csproj",
+        "projectPath": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\SLApps.csproj",
         "packagesPath": "C:\\Users\\olivier.malamou\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\SLApps\\obj\\",
+        "outputPath": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olivier.malamou\\AppData\\Roaming\\NuGet\\NuGet.Config",

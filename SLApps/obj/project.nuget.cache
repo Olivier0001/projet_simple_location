@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qDwj7cKYIXXYzvQG6K4RHVkEDapguwbxkUtq4SLWMRErB3jb0cnkP4eBsctAaUtfYQKEZSCgSSYRyUAXYSMhxg==",
+  "dgSpecHash": "W8dF9GlYME4CCnNr5wEpjO1SCp2QFy0FQzhWYVDwVxQEGsnj/L3EpHPH+Xi92S1EQLX8Be6qFIc93cHTSRj+Tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\SLApps\\SLApps.csproj",
+  "projectFilePath": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\SLApps.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olivier.malamou\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\olivier.malamou\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
