@@ -1,25 +1,26 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SLApps.DataAccess;
+using SLAppsDataAccess.Repository.IRepository;
 using SLAppsModels;
 
 namespace SLApps.Pages.Clients
 {
     public class EditModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IClientRepository _context;
 
         public Client Client { get; set; }
 
-        public EditModel(ApplicationDbContext context)
+        public EditModel(IClientRepository context)
         {
             _context = context;
         }
 
         public void OnGet(int id_client)
         {
-            Client = _context.Clients.Find(id_client);
-            //Client = _context.Clients.FirstOrDefault(u=>u.id_client==id_client);
+            //Client = _context.Clients.Find(id_client);
+            Client = _context.GetFirstOrDefault(u => u.id_client == id_client);
         }
 
         public async Task<IActionResult> OnPost(Client client)
@@ -31,8 +32,8 @@ namespace SLApps.Pages.Clients
 
             if (ModelState.IsValid)
             {
-                _context.Clients.Update(client);
-                await _context.SaveChangesAsync();
+                _context.Update(client);
+                _context.Save();
                 TempData["success"] = "Le client a été modifié avec succès.";
                 return RedirectToPage("Index");
             }

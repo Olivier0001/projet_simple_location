@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SLApps.DataAccess;
+using SLAppsDataAccess.Repository;
+using SLAppsDataAccess.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +10,8 @@ builder.Services.AddRazorPages()/*.AddRazorRuntimeCompilation()*/;
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
-
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation() ;
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

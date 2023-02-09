@@ -1,16 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SLApps.DataAccess;
+using SLAppsDataAccess.Repository.IRepository;
 using SLAppsModels;
 
 namespace SLApps.Pages.Clients
 {
     public class CreateModel : PageModel
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IClientRepository _context;
 
         public Client Client { get; set; }
-        public CreateModel(ApplicationDbContext context)
+        public CreateModel(IClientRepository context)
         {
             _context = context;
         }
@@ -27,8 +28,8 @@ namespace SLApps.Pages.Clients
 
             if (ModelState.IsValid)
             {
-                await _context.Clients.AddAsync(client);
-                await _context.SaveChangesAsync();
+                _context.Add(client);
+                _context.Save();
                 TempData["success"] = "Le client a été créé avec succès.";
                 return RedirectToPage("Index");
             }
