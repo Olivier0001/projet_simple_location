@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u9x2xruaiuRHJRuMUiJql63CD446sa2oeXuCUJjrmN8=",
+  "Hash": "w7u8/VcvykLBDb6QJ518uuObS1UjGaqFejN2ZygiDNU=",
   "Source": "SLApps",
   "BasePath": "_content/SLApps",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\images\\products\\3627d8b7-716b-4148-8d30-be92e734981b.png",
+      "SourceId": "SLApps",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\",
+      "BasePath": "_content/SLApps",
+      "RelativePath": "images/products/3627d8b7-716b-4148-8d30-be92e734981b.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\3627d8b7-716b-4148-8d30-be92e734981b.png"
     },
     {
       "Identity": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\js\\site.js",

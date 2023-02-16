@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,13 +8,14 @@ namespace SLAppsModels
 {
     public class Client
     {
+        [BindProperty]
         [Key]
         public int id_client { get; set; }
         public int id_role { get; set; } = 1;
 
-
+        [BindProperty]
         [Required(ErrorMessage = "Le champ Nom Client est obligatoire")]
-        public string nom_client { get; set; }
+        public string? nom_client { get; set; }
 
         [Required(ErrorMessage = "Le champ Prenom Client est obligatoire")]
         public string prenom_client { get; set; }

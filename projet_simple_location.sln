@@ -5,11 +5,11 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLApps", "SLApps\SLApps.csproj", "{8CB4355E-52C9-4698-B459-0417764AAEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLAppsDataAccess", "SLAppsDataAccess\SLAppsDataAccess.csproj", "{17BB70A9-6638-464F-ACD3-C3C376465EF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLAppsDataAccess", "SLAppsDataAccess\SLAppsDataAccess.csproj", "{17BB70A9-6638-464F-ACD3-C3C376465EF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLAppsModels", "SLAppsModels\SLAppsModels.csproj", "{EC84D7EC-C789-47F4-80D8-65CD4593EBC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLAppsModels", "SLAppsModels\SLAppsModels.csproj", "{EC84D7EC-C789-47F4-80D8-65CD4593EBC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLAppsUtility", "SLAppsUtility\SLAppsUtility.csproj", "{15172E9E-652D-412A-983D-43F9AECE3D1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLAppsUtility", "SLAppsUtility\SLAppsUtility.csproj", "{15172E9E-652D-412A-983D-43F9AECE3D1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

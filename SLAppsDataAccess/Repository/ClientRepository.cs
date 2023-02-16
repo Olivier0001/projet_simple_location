@@ -12,13 +12,10 @@ namespace SLAppsDataAccess.Repository
     public class ClientRepository : Repository<Client>, IClientRepository
     {
         private ApplicationDbContext _context;
-
         public ClientRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
         }
-
-
         public void Update(Client obj)
         {
             _context.Clients.Update(obj);

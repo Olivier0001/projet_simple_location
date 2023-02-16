@@ -10,34 +10,27 @@ namespace SLApps.Pages.Clients
     [BindProperties]
     public class DeleteModel : PageModel
     {
-        private readonly IClientRepository _context;
-
+        private readonly IUnitOfWork _unitOfWork;
         public Client Client { get; set; }
-
-        public DeleteModel(IClientRepository context)
+        public DeleteModel(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
-
         public void OnGet(int id_client)
         {
-            //Client = _context.Clients.Find(id_client);
-            Client = _context.GetFirstOrDefault(u => u.id_client == id_client);
+            Client = _unitOfWork.Client.GetFirstOrDefault(u => u.id_client == id_client);
         }
-
         public async Task<IActionResult> OnPost(int? id_client)
         {
-            var clientFromContext = _context.GetFirstOrDefault(u => u.id_client == id_client);
+            var clientFromContext = _unitOfWork.Client.GetFirstOrDefault(u => u.id_client == id_client);
             if (clientFromContext != null)
             {
-                _context.Remove(clientFromContext);
-                _context.Save();
+                _unitOfWork.Client.Remove(clientFromContext);
+                _unitOfWork.Save();
                 TempData["success"] = "Le client a été supprimé avec succès.";
                 return RedirectToPage("Index");
             }
-
             return Page();
-
         }
     }
 }
