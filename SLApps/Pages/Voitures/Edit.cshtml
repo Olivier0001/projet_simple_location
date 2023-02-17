@@ -39,6 +39,10 @@
                 </div>
                 <div class="mb-3">
                     <label asp-for="Voiture.image_voiture" class="custom-file-label">Image Voiture</label>
+                    @if(Model.Voiture.image_voiture != null)
+                    {
+                        <span>(<a target="_blank" href="@Url.Content(Model.Voiture.image_voiture)">@Model.Voiture.image_voiture</a>)</span>
+                    }
                     <input type="file" asp-for="Voiture.image_voiture" id="uploadBox" name="file" class="custom-file-input form-control" />
                     <span asp-validation-for="Voiture.image_voiture" class="text-danger"></span>
                 </div>
