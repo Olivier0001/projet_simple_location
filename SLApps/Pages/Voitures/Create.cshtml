@@ -1,0 +1,50 @@
+﻿@page
+@model SLApps.Pages.Voitures.CreateModel
+
+<form method="post" enctype="multipart/form-data">
+    <div class="border p-3 mt-4 row">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Créer Une Voiture</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="Voiture.marque_voiture">Marque Voiture</label>
+            <input asp-for="Voiture.marque_voiture" class="form-control" />
+            <span asp-validation-for="Voiture.marque_voiture" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Voiture.modele_voiture">Modele Voiture</label>
+            <input asp-for="Voiture.modele_voiture" class="form-control" />
+            <span asp-validation-for="Voiture.modele_voiture" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Voiture.couleur_voiture">Couleur Voiture</label>
+            <input asp-for="Voiture.couleur_voiture" class="form-control" />
+            <span asp-validation-for="Voiture.couleur_voiture" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Voiture.immatriculation_voiture">Immatriculation Voiture</label>
+            <input asp-for="Voiture.immatriculation_voiture" class="form-control" />
+            <span asp-validation-for="Voiture.immatriculation_voiture" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Voiture.annee_voiture">Année Voiture</label>
+            <input asp-for="Voiture.annee_voiture" class="form-control" />
+            <span asp-validation-for="Voiture.annee_voiture" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Voiture.image_voiture">Image Voiture</label>
+            <input type="file" id="uploadBox" name="file" class="form-control" />
+            <span asp-validation-for="Voiture.image_voiture" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px;">Créer Voiture</button>
+        <a asp-page="Index" class="btn btn-secondary" style="width:150px;">Retour à la liste</a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }

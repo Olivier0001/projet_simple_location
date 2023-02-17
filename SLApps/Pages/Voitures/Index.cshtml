@@ -1,0 +1,57 @@
+﻿@page
+@model SLApps.Pages.Voitures.IndexModel
+<partial name="_Notification" />
+<br>
+<h2 class="text-primary">Liste de Voiture</h2>
+<br>
+<div class="col-6">
+    <a asp-page="create" class="btn btn-primary">
+        <i class="bi bi-plus-square"></i> &nbsp;Créer Nouveau Voiture
+    </a>
+</div>
+<br>
+<br>
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>Id Voiture</th>
+            <th>Marque Voiture</th>
+            <th>Modele Voiture</th>
+            <th>Couleur Voiture</th>
+            <th>Immatriculation Voiture</th>
+            <th>Annee Voiture</th>
+            <th>Image Voiture</th>
+            <th>Date de Creation Voiture</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.Voitures)
+        {
+            <tr>
+                <td>@obj.id_voiture</td>
+                <td>@obj.marque_voiture</td>
+                <td>@obj.modele_voiture</td>
+                <td>@obj.couleur_voiture</td>
+                <td>@obj.immatriculation_voiture</td>
+                <td>@obj.annee_voiture</td>
+                <td>@obj.image_voiture</td>
+                <td>@obj.date_creation_voiture</td>
+                @* <td>
+            <img src="/images/products/jpg;base64,@obj.ImageUrl" width="120px" height="120px"/>
+            </td>*@
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-page="Edit" asp-route-id_voiture="@obj.id_voiture" class="btn btn-primary mx-2">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <a asp-page="Delete" asp-route-id_voiture="@obj.id_voiture" class="btn btn-danger mx-2">
+                            <i class="bi bi-trash-fill"></i>
+                        </a>
+                    </div>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

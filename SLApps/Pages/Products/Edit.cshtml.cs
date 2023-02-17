@@ -29,6 +29,7 @@ namespace SLApps.Pages.Products
             Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == Id);
             this.Clients = new SelectList(clientList(), "id_client", "nom_client");
 
+            
         }
 
         //public void OnPostSubmit(Client client)

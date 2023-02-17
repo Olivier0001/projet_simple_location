@@ -83,6 +83,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/olivier.malamou/source/repos/projet_simple_location/git/projet_simple_location/SLApps/Pages/Voitures/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/olivier.malamou/source/repos/projet_simple_location/git/projet_simple_location/SLApps/Pages/Voitures/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/olivier.malamou/source/repos/projet_simple_location/git/projet_simple_location/SLApps/Pages/Voitures/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/olivier.malamou/source/repos/projet_simple_location/git/projet_simple_location/SLApps/Pages/Voitures/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/olivier.malamou/source/repos/projet_simple_location/git/projet_simple_location/SLApps/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

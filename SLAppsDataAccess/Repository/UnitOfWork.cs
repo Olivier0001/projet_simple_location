@@ -19,10 +19,12 @@ namespace SLAppsDataAccess.Repository
             Client = new ClientRepository(_context);
             Product = new ProductRepository(_context);
             Role = new RoleRepository(_context);
+            Voiture = new VoitureRepository(_context);
         }
         public IClientRepository Client { get; private set; }
         public IProductRepository Product { get; private set; }
         public IRoleRepository Role { get; private set; }
+        public IVoitureRepository Voiture { get; private set; }
         public void Save()
         {
             _context.SaveChanges();

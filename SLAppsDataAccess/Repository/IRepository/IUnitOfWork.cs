@@ -13,7 +13,11 @@ namespace SLAppsDataAccess.Repository.IRepository
 
         [ValidateNever]
         IProductRepository Product { get; }
+
         IRoleRepository Role { get; }
+
+        [ValidateNever]
+        IVoitureRepository Voiture { get; }
         void Save();
     }
 }

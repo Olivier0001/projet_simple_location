@@ -2,8 +2,8 @@
 @model SLApps.Pages.Products.EditModel
 
 
-<form method="post" enctype="multipart/form-data">
-    <input hidden asp-for="Product.Id" />
+<form method="post" enctype="multipart/form-data" name="formulaire">
+    <input hidden  asp-for="Product.Id" />
     <input hidden asp-for="Product.ImageUrl" />
 
     <div class="row">
@@ -65,7 +65,8 @@
                     </select>
                     <span asp-validation-for="Product.ClientId" class="text-danger"></span>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width:150px;">Modifier Product</button>
+
+                <button type="submit" class="btn btn-primary" style="width:150px;" name="btn_submitt" >Modifier Product</button>
                 <a asp-page="Index" class="btn btn-secondary" style="width:150px;">Retour à la liste</a>
 
             </div>
