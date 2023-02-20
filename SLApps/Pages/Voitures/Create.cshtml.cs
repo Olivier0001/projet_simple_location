@@ -14,6 +14,7 @@ namespace SLApps.Pages.Voitures
 
         public Voiture Voiture { get; set; }
 
+
         public CreateModel(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
@@ -40,6 +41,7 @@ namespace SLApps.Pages.Voitures
 
                     voiture.image_voiture = @"\images\voitures\" + fileName + extension;
                 }
+               
                 _unitOfWork.Voiture.Add(voiture);
                 _unitOfWork.Save();
                 TempData["success"] = "La voiture a été créé avec succès.";

@@ -14,8 +14,6 @@
 <table class="table table-bordered table-striped" style="width:100%">
     <thead>
         <tr>
-            <th>ID Client</th>
-            <th>ID Role</th>
             <th>Nom Client</th>
             <th>Prenom Client</th>
             <th>Age Client</th>
@@ -24,6 +22,7 @@
             <th>Adresse Client</th>
             <th>Code Postal Client</th>
             <th>Ville Client</th>
+            <th>Image Client</th>
             <th>Date Creation Client</th>
         </tr>
     </thead>
@@ -31,8 +30,6 @@
         @foreach (var obj in Model.Clients)
         {
             <tr>
-                <td>@obj.id_client</td>
-                <td>@obj.id_role</td>
                 <td>@obj.nom_client</td>
                 <td>@obj.prenom_client</td>
                 <td>@obj.age_client</td>
@@ -41,6 +38,9 @@
                 <td>@obj.adresse_client</td>
                 <td>@obj.code_postal_client</td>
                 <td>@obj.ville_client</td>
+                <td>
+                    <img src="@obj.image_client" width="120px" height="120px" />
+                </td>
                 <td>@obj.date_creation_client</td>
                 <td>
                     <div class="w-75 btn-group" role="group">

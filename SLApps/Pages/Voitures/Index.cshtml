@@ -14,7 +14,6 @@
 <table class="table table-bordered table-striped" style="width:100%">
     <thead>
         <tr>
-            <th>Id Voiture</th>
             <th>Marque Voiture</th>
             <th>Modele Voiture</th>
             <th>Couleur Voiture</th>
@@ -29,17 +28,16 @@
         @foreach (var obj in Model.Voitures)
         {
             <tr>
-                <td>@obj.id_voiture</td>
                 <td>@obj.marque_voiture</td>
                 <td>@obj.modele_voiture</td>
                 <td>@obj.couleur_voiture</td>
                 <td>@obj.immatriculation_voiture</td>
                 <td>@obj.annee_voiture</td>
-                <td>@obj.image_voiture</td>
+                @*<td>@obj.image_voiture</td>*@
+                <td>
+                    <img src="@obj.image_voiture" width="120px" height="120px" />
+                </td>
                 <td>@obj.date_creation_voiture</td>
-                @* <td>
-            <img src="/images/products/jpg;base64,@obj.ImageUrl" width="120px" height="120px"/>
-            </td>*@
                 <td>
                     <div class="w-75 btn-group" role="group">
                         <a asp-page="Edit" asp-route-id_voiture="@obj.id_voiture" class="btn btn-primary mx-2">

@@ -72,7 +72,7 @@ namespace SLApps.Pages.Products
 
         }
 
-        public async Task<IActionResult> OnPost(Product product, IFormFile file)
+        public async Task<IActionResult> OnPost(Product product, IFormFile Image)
         {
 
 
@@ -80,20 +80,20 @@ namespace SLApps.Pages.Products
             {
 
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
-                if (file != null)
+                if (Image != null)
                 {
                     string fileName = Guid.NewGuid().ToString();
                     var uploads = Path.Combine(wwwRootPath, @"images/products");
-                    var extension = Path.GetExtension(file.FileName);
+                    var extension = Path.GetExtension(Image.FileName);
 
                     using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
-                        file.CopyTo(fileStreams);
+                        Image.CopyTo(fileStreams);
                     }
 
                     product.ImageUrl = @"\images\products\" + fileName + extension;
 
-
+                   
                 }
 
                 _unitOfWork.Product.Add(product);

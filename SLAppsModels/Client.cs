@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -37,6 +38,10 @@ namespace SLAppsModels
 
         [Required(ErrorMessage = "Le champ Ville Client est obligatoire")]
         public string ville_client { get; set; }
+
+        [ValidateNever]
+        [Required(ErrorMessage = "Le champ Image Client est obligatoire")]
+        public string? image_client { get; set; }
 
         [Column(TypeName = "datetime")]
         public DateTime date_creation_client { get; set; } = DateTime.Now;

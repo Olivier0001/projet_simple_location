@@ -9,6 +9,7 @@ namespace SLAppsDataAccess.Repository.IRepository
 {
     public interface IUnitOfWork
     {
+        [ValidateNever]
         IClientRepository Client { get; }
 
         [ValidateNever]
