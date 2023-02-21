@@ -1,0 +1,44 @@
+﻿@page
+@model SLApps.Pages.Reservations.CreateModel
+
+<form method="post" >
+    <div class="border p-3 mt-4 row">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Créer Une Réservation</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3 col-6">
+            <label asp-for="Reservation.id_client">Client</label>
+            <select asp-for="Reservation.id_client" asp-items="@Model.Clients" class="form-select">
+                <option disabled selected>--Selectionner Client--</option>
+            </select>
+            <span asp-validation-for="Reservation.id_client" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Reservation.id_voiture">Voiture</label>
+            <select asp-for="Reservation.id_voiture" asp-items="@Model.Voitures" class="form-select">
+                <option disabled selected>--Selectionner Voiture--</option>
+            </select>
+            <span asp-validation-for="Reservation.id_client" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Reservation.date_de_debut">Date de Début</label>
+            <input asp-for="Reservation.date_de_debut" class="form-control" id="date_de_debut"  />
+            <span asp-validation-for="Reservation.date_de_debut" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Reservation.date_de_fin">Date de Fin</label>
+            <input asp-for="Reservation.date_de_fin" class="form-control" />
+            <span asp-validation-for="Reservation.date_de_fin" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px;">Créer Réservation</button>
+        <a asp-page="Index" class="btn btn-secondary" style="width:150px;">Retour à la liste</a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }

@@ -1,0 +1,56 @@
+﻿@page
+@model SLApps.Pages.Reservations.IndexModel
+
+<partial name="_Notification" />
+
+<br>
+<h2 class="text-primary">Liste des Reservations</h2>
+<br>
+<div class="col-6">
+    <a asp-page="create" class="btn btn-primary">
+        <i class="bi bi-plus-square"></i> &nbsp;Créer Reservation
+    </a>
+</div>
+
+<br>
+<br>
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>Id Reservation</th>
+            <th>Nom Client</th>
+            <th>Modele Voiture</th>
+            <th>Date de Début</th>
+            <th>Date de Fin</th>
+            <th>Date Creation Reservation</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.Reservations)
+        {
+            <tr>
+                <td>@obj.id_reservation</td>
+                <td>@obj.Client.nom_client</td>
+                <td>@obj.Voiture.modele_voiture</td>
+                <td>@obj.date_de_debut.Value.ToString("dd/MM/yyyy")</td>
+                <td>@obj.date_de_fin.Value.ToString("dd/MM/yyyy")</td>
+                <td>@obj.date_creation_reservation</td>
+                @* <td>
+            <img src="/images/products/jpg;base64,@obj.ImageUrl" width="120px" height="120px"/>
+            </td>*@
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-page="Edit" asp-route-id_reservation="@obj.id_reservation" class="btn btn-primary mx-2">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <a asp-page="Delete" asp-route-id_reservation="@obj.id_reservation" class="btn btn-danger mx-2">
+                            <i class="bi bi-trash-fill"></i>
+                        </a>
+                    </div>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

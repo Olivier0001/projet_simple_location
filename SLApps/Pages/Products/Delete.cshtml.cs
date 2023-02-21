@@ -69,20 +69,12 @@ namespace SLApps.Pages.Products
 
         }
 
-        public async Task<IActionResult> OnPost(int? Id, Product product)
+        public async Task<IActionResult> OnPost(int? Id)
         {
-            string wwwRootPath = _webHostEnvironment.WebRootPath;
-            string Path = wwwRootPath + product.ImageUrl;
+
             var productFromContext = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == Id);
             if (productFromContext != null)
             {
-
-                FileInfo fileInfo = new FileInfo(Path);
-                if (fileInfo.Exists)
-                {
-                    fileInfo.Delete();
-                }
-
                 _unitOfWork.Product.Remove(productFromContext);
                 _unitOfWork.Save();
                 TempData["success"] = "Le Product a été supprimé avec succès.";
@@ -93,7 +85,7 @@ namespace SLApps.Pages.Products
 
 
 
-           
+
         }
     }
 }

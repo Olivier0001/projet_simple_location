@@ -1,0 +1,41 @@
+﻿@page
+@model SLApps.Pages.Reservations.DeleteModel
+
+<form method="post">
+    <input hidden asp-for="Reservation.id_reservation" />
+    <div class="border p-3 mt-4 row">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Supprimer une Réservation</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3 col-6">
+            <label asp-for="Reservation.id_client">Client</label>
+            <select asp-for="Reservation.id_client" asp-items="@Model.Clients" disabled class="form-select">
+                <option disabled selected>--Selectionner Client--</option>
+            </select>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Reservation.id_voiture">Voiture</label>
+            <select asp-for="Reservation.id_voiture" asp-items="@Model.Voitures" disabled class="form-select">
+                <option disabled selected >--Selectionner Voiture--</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Reservation.date_de_debut">Date de Début</label>
+            <input asp-for="Reservation.date_de_debut" class="form-control" disabled id="date_de_debut" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Reservation.date_de_fin">Date de Fin</label>
+            <input asp-for="Reservation.date_de_fin" disabled class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px;">Supprimer Reservation</button>
+        <a asp-page="Index" class="btn btn-secondary" style="width:150px;">Retour à la liste</a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }

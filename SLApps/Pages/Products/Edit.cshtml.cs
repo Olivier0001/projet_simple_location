@@ -29,7 +29,6 @@ namespace SLApps.Pages.Products
             Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == Id);
             this.Clients = new SelectList(clientList(), "id_client", "nom_client");
 
-            
         }
 
         //public void OnPostSubmit(Client client)
@@ -103,7 +102,7 @@ namespace SLApps.Pages.Products
 
                 }
 
-                if ((product.Id == 0)) 
+                if ((product.Id == 0))
                 {
                     _unitOfWork.Product.Add(product);
                 }

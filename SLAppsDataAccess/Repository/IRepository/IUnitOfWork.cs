@@ -19,6 +19,10 @@ namespace SLAppsDataAccess.Repository.IRepository
 
         [ValidateNever]
         IVoitureRepository Voiture { get; }
+
+        [ValidateNever]
+        IReservationRepository Reservation { get; }
+
         void Save();
     }
 }

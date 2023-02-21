@@ -13,7 +13,7 @@ namespace SLApps.Pages.Products
 {
     public class CreateModel : PageModel
     {
-        
+
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
@@ -21,17 +21,18 @@ namespace SLApps.Pages.Products
         public SelectList Clients { get; set; }
 
         public CreateModel(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
-        {           _unitOfWork = unitOfWork;
+        {
+            _unitOfWork = unitOfWork;
             _webHostEnvironment = webHostEnvironment;
         }
 
-       
-        
+
+
         public void OnGet()
         {
 
             this.Clients = new SelectList(clientList(), "id_client", "nom_client");
-            
+
         }
 
         //public void OnPostSubmit(Client client)
@@ -72,7 +73,7 @@ namespace SLApps.Pages.Products
 
         }
 
-        public async Task<IActionResult> OnPost(Product product, IFormFile Image)
+        public async Task<IActionResult> OnPost(Product product, IFormFile file)
         {
 
 
@@ -80,20 +81,20 @@ namespace SLApps.Pages.Products
             {
 
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
-                if (Image != null)
+                if (file != null)
                 {
                     string fileName = Guid.NewGuid().ToString();
                     var uploads = Path.Combine(wwwRootPath, @"images/products");
-                    var extension = Path.GetExtension(Image.FileName);
+                    var extension = Path.GetExtension(file.FileName);
 
                     using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
-                        Image.CopyTo(fileStreams);
+                        file.CopyTo(fileStreams);
                     }
 
                     product.ImageUrl = @"\images\products\" + fileName + extension;
 
-                   
+
                 }
 
                 _unitOfWork.Product.Add(product);
@@ -102,7 +103,7 @@ namespace SLApps.Pages.Products
                 return RedirectToPage("Index");
             }
 
-          
+
 
             return Page();
 
