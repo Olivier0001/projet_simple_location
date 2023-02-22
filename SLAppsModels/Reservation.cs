@@ -43,6 +43,7 @@ namespace SLAppsModels
         [Required(ErrorMessage = "Le champ Date de Fin est obligatoire")]
         public DateTime? date_de_fin { get; set; }
 
+
         [Column(TypeName = "datetime")]
         public DateTime date_creation_reservation { get; set; } = DateTime.Now;
     }

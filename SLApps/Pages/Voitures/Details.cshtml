@@ -1,0 +1,47 @@
+﻿@page
+@model SLApps.Pages.Voitures.DetailsModel
+@{
+}
+ 
+
+<form method="post" enctype="multipart/form-data" name="formulaire">
+    <input hidden asp-for="Voiture.id_voiture" />
+    <input hidden asp-for="Voiture.image_voiture" />
+    <div class="row">
+        <div class="col-10">
+            <div class="border p-3 mt-4 row">
+                <div class="col-12 pb-2">
+                    <h2 class="text-primary pl-3">Detail d'une Voiture</h2>
+                    <hr />
+                </div>
+                <div asp-validation-summary="All"></div>
+                <div class="mb-3">
+                    <label asp-for="Voiture.marque_voiture">Marque Voiture</label>
+                    <input asp-for="Voiture.marque_voiture" disabled class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Voiture.modele_voiture">Modele Voiture</label>
+                    <input asp-for="Voiture.modele_voiture" disabled class="form-control" />
+                </div>
+                <div class="mb-3 col-6">
+                    <label asp-for="Voiture.couleur_voiture">Couleur Voiture</label>
+                    <input asp-for="Voiture.couleur_voiture" disabled class="form-control" />
+                </div>
+                <div class="mb-3 col-6">
+                    <label asp-for="Voiture.annee_voiture">Année Voiture</label>
+                    <input asp-for="Voiture.annee_voiture" disabled class="form-control" />
+                </div>
+                <div id="container_image_details">
+                    <img src="@Model.Voiture.image_voiture" width="200%" style="border-radius:5px; border:1px solid #bbb9b9" id="image_details" />
+                </div>
+                <a asp-page="../Index" class="btn btn-primary " style="width:150px;">Retour à la liste</a>
+            </div>
+
+        </div>
+    </div>
+</form>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
