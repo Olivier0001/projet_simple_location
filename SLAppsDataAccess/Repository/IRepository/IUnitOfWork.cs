@@ -12,9 +12,6 @@ namespace SLAppsDataAccess.Repository.IRepository
         [ValidateNever]
         IClientRepository Client { get; }
 
-        [ValidateNever]
-        IProductRepository Product { get; }
-
         IRoleRepository Role { get; }
 
         [ValidateNever]

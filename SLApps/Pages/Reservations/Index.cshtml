@@ -17,7 +17,6 @@
 <table class="table table-bordered table-striped" style="width:100%">
     <thead>
         <tr>
-            <th>Id Reservation</th>
             <th>Nom Client</th>
             <th>Modele Voiture</th>
             <th>Date de Début</th>
@@ -30,9 +29,10 @@
         @foreach (var obj in Model.Reservations)
         {
             <tr>
-                <td>@obj.id_reservation</td>
                 <td>@obj.Client.nom_client</td>
-                <td>@obj.Voiture.modele_voiture</td>
+                <td>
+                    <img src="@obj.Voiture.image_voiture" width="120px" height="120px" />
+                </td>
                 <td>@obj.date_de_debut.Value.ToString("dd/MM/yyyy")</td>
                 <td>@obj.date_de_fin.Value.ToString("dd/MM/yyyy")</td>
                 <td>@obj.date_creation_reservation</td>

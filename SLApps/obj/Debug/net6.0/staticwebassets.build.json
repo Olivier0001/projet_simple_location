@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hoasWvUyNA07qruvSEllxgxQDa7XGDyXxUls+OfwoWs=",
+  "Hash": "OD6sFlaLAUae1IY397xQi11vbOV52FWqiVaI6Qx+IQY=",
   "Source": "SLApps",
   "BasePath": "_content/SLApps",
   "Mode": "Default",
@@ -151,23 +151,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\clients\\1b88549f-3ebb-4f08-a027-582920577773.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\images\\products\\0f4acb15-8643-4d5e-bffd-ca04b79b03b8.jpg",
-      "SourceId": "SLApps",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\",
-      "BasePath": "_content/SLApps",
-      "RelativePath": "images/products/0f4acb15-8643-4d5e-bffd-ca04b79b03b8.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\0f4acb15-8643-4d5e-bffd-ca04b79b03b8.jpg"
     },
     {
       "Identity": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\images\\voitures\\46c9cd41-7f82-45c9-97ad-c4196cf385d9.jpg",
