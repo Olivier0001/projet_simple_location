@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L8PJgQO4Kx6HQhJS8/QgAvtYPMPegrxNeCW/CjLcejE=",
+  "Hash": "TG0v+Rc5r2b8Ut8EarGNdOv1R8MRW9Ejm6U2MXoNK8U=",
   "Source": "SLApps",
   "BasePath": "_content/SLApps",
   "Mode": "Default",
@@ -153,12 +153,12 @@
       "OriginalItemSpec": "wwwroot\\images\\clients\\1b88549f-3ebb-4f08-a027-582920577773.jpg"
     },
     {
-      "Identity": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\images\\voitures\\46c9cd41-7f82-45c9-97ad-c4196cf385d9.jpg",
+      "Identity": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\images\\voitures\\047c3300-504b-4871-a781-47286a6e3e85.jpg",
       "SourceId": "SLApps",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\",
       "BasePath": "_content/SLApps",
-      "RelativePath": "images/voitures/46c9cd41-7f82-45c9-97ad-c4196cf385d9.jpg",
+      "RelativePath": "images/voitures/047c3300-504b-4871-a781-47286a6e3e85.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,7 +167,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\voitures\\46c9cd41-7f82-45c9-97ad-c4196cf385d9.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\voitures\\047c3300-504b-4871-a781-47286a6e3e85.jpg"
     },
     {
       "Identity": "C:\\Users\\olivier.malamou\\source\\repos\\projet_simple_location\\git\\projet_simple_location\\SLApps\\wwwroot\\images\\voitures\\999941b7-df04-4d60-a906-305600923228.jfif",
